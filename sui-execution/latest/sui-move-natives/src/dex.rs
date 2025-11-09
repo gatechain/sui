@@ -122,9 +122,11 @@ pub fn new_liquidity_pool_internal(
     let bToken = pop_arg!(args, Struct);
 
     let mut iter = aToken.unpack()?;
-    let name: String = iter.next().unwrap().value_as()?;
+    //todo get string from move value
+    let name: String = iter.next().unwrap().to_string();
     let symbol = iter.next().unwrap().to_string();
-    println!("btoken {:?}", bToken);
+    println!("name {:?}", name);
+    println!("symbol {:?}", symbol);
    // let bToken = pop_arg!(args, Token);
    // let obj = args.pop_back().unwrap();
 
