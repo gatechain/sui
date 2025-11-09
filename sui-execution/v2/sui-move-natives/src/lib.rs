@@ -70,6 +70,7 @@ pub mod object_runtime;
 mod test_scenario;
 mod test_utils;
 mod transfer;
+mod dex;
 mod tx_context;
 mod types;
 mod validator;
@@ -827,6 +828,11 @@ pub fn all_natives(silent: bool) -> NativeFunctionTable {
             "transfer",
             "receive_impl",
             make_native!(transfer::receive_object_internal),
+        ),
+        (
+            "dex",
+            "new_liquidity_pool_internal_impl",
+            make_native!(dex::new_liquidity_pool_internal),
         ),
         (
             "tx_context",

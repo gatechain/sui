@@ -2737,6 +2737,15 @@ exists
 create
 	fun
 	0x2::coin_registry
+Token
+	public struct
+	0x2::dex
+create_token
+	public fun
+	0x2::dex
+new_liquidity_pool_internal_impl
+	public fun
+	0x2::dex
 Publisher
 	public struct
 	0x2::package
