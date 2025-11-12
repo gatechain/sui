@@ -2737,13 +2737,85 @@ exists
 create
 	fun
 	0x2::coin_registry
-Token
+Order
 	public struct
 	0x2::dex
-create_token
+PriceLevel
+	public struct
+	0x2::dex
+Pool
+	public struct
+	0x2::dex
+OrderIndex
+	public struct
+	0x2::dex
+OrderCap
+	public struct
+	0x2::dex
+OrderPlaced
+	public struct
+	0x2::dex
+OrderCancelled
+	public struct
+	0x2::dex
+create_pool
 	public fun
 	0x2::dex
-new_liquidity_pool_internal_impl
+share_pool
+	public fun
+	0x2::dex
+place_order
+	public fun
+	0x2::dex
+cancel_order
+	public fun
+	0x2::dex
+add_order_to_pool
+	fun
+	0x2::dex
+remove_order_from_pool
+	fun
+	0x2::dex
+get_best_bid
+	public fun
+	0x2::dex
+get_best_ask
+	public fun
+	0x2::dex
+get_depth_summary
+	public fun
+	0x2::dex
+has_level
+	public fun
+	0x2::dex
+get_level_quantity
+	public fun
+	0x2::dex
+get_level_order_count
+	public fun
+	0x2::dex
+order_id
+	public fun
+	0x2::dex
+order_price
+	public fun
+	0x2::dex
+order_quantity
+	public fun
+	0x2::dex
+order_filled_quantity
+	public fun
+	0x2::dex
+order_is_bid
+	public fun
+	0x2::dex
+order_owner
+	public fun
+	0x2::dex
+pool_total_orders
+	public fun
+	0x2::dex
+pool_next_order_id
 	public fun
 	0x2::dex
 Publisher

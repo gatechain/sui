@@ -1174,6 +1174,16 @@ pub fn all_natives(silent: bool, protocol_config: &ProtocolConfig) -> NativeFunc
             make_native!(dex::new_liquidity_pool_internal),
         ),
         (
+            "dex",
+            "place_order_internal",
+            make_native!(dex::place_order_internal),
+        ),
+        (
+            "dex",
+            "cancel_order_internal",
+            make_native!(dex::cancel_order_internal),
+        ),
+        (
             "tx_context",
             "last_created_id",
             make_native!(tx_context::last_created_id),
