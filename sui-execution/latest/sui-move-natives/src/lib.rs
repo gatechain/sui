@@ -73,7 +73,7 @@ use sui_protocol_config::ProtocolConfig;
 use sui_types::{MOVE_STDLIB_ADDRESS, SUI_FRAMEWORK_ADDRESS, SUI_SYSTEM_ADDRESS};
 use transfer::TransferReceiveObjectInternalCostParams;
 
-mod dex;
+mod dex_hybrid;
 mod accumulator;
 mod address;
 mod config;
@@ -1169,19 +1169,19 @@ pub fn all_natives(silent: bool, protocol_config: &ProtocolConfig) -> NativeFunc
             make_native!(transfer::receive_object_internal),
         ),
         (
-            "dex",
-            "new_liquidity_pool_internal_impl",
-            make_native!(dex::new_liquidity_pool_internal),
+            "dex_hybrid",
+            "calculate_matches_internal",
+            make_native!(dex_hybrid::calculate_matches_native),
         ),
         (
-            "dex",
-            "place_order_internal",
-            make_native!(dex::place_order_internal),
+            "dex_hybrid",
+            "get_best_prices_internal",
+            make_native!(dex_hybrid::get_best_prices_native),
         ),
         (
-            "dex",
-            "cancel_order_internal",
-            make_native!(dex::cancel_order_internal),
+            "dex_hybrid",
+            "update_order_internal",
+            make_native!(dex_hybrid::update_order_native),
         ),
         (
             "tx_context",

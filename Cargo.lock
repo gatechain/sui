@@ -15612,6 +15612,7 @@ dependencies = [
  "move-stdlib-natives",
  "move-vm-runtime",
  "move-vm-types",
+ "once_cell",
  "rand 0.8.5",
  "smallvec",
  "sui-protocol-config",

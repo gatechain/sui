@@ -2818,6 +2818,75 @@ pool_total_orders
 pool_next_order_id
 	public fun
 	0x2::dex
+Pool
+	public struct
+	0x2::dex_hybrid
+PriceLevel
+	public struct
+	0x2::dex_hybrid
+OrderIndex
+	public struct
+	0x2::dex_hybrid
+Order
+	public struct
+	0x2::dex_hybrid
+MatchResult
+	public struct
+	0x2::dex_hybrid
+MatchedOrder
+	public struct
+	0x2::dex_hybrid
+OrderPlaced
+	public struct
+	0x2::dex_hybrid
+OrderMatched
+	public struct
+	0x2::dex_hybrid
+OrderFilled
+	public struct
+	0x2::dex_hybrid
+get_best_prices_internal
+	fun
+	0x2::dex_hybrid
+create_pool
+	public fun
+	0x2::dex_hybrid
+place_limit_order
+	public fun
+	0x2::dex_hybrid
+cancel_order
+	public fun
+	0x2::dex_hybrid
+get_best_prices
+	public fun
+	0x2::dex_hybrid
+get_depth_at_price
+	public fun
+	0x2::dex_hybrid
+get_order_info
+	public fun
+	0x2::dex_hybrid
+calculate_matches_in_move
+	fun
+	0x2::dex_hybrid
+execute_buy_matches
+	fun
+	0x2::dex_hybrid
+execute_sell_matches
+	fun
+	0x2::dex_hybrid
+add_order_to_book
+	fun
+	0x2::dex_hybrid
+update_order_quantity
+	fun
+	0x2::dex_hybrid
+remove_order_from_level
+	fun
+	0x2::dex_hybrid
+insert_price_sorted
+	fun
+	0x2::dex_hybrid
 Publisher
 	public struct
 	0x2::package

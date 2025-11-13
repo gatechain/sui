@@ -16,6 +16,7 @@ bcs.workspace = true
 indexmap.workspace = true
 smallvec.workspace = true
 rand = { workspace = true, features = ["small_rng"] }
+once_cell.workspace = true
 
 fastcrypto-zkp.workspace = true
 fastcrypto-vdf.workspace = true
